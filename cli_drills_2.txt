@@ -1,0 +1,47 @@
+Pipes Cli_drill_2
+
+wget "https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt"
+head -3 "Harry Potter and the Goblet of Fire.txt"
+tail -10 "Harry Potter and the Goblet of Fire.txt"
+cat "Harry Potter and the Goblet of Fire.txt" | grep -o Harry | wc -l
+cat "Harry Potter and the Goblet of Fire.txt" | grep -o Ron | wc -l
+cat "Harry Potter and the Goblet of Fire.txt" | grep -o Hermione | wc -l
+cat "Harry Potter and the Goblet of Fire.txt" | grep -o Dumbledore | wc -l
+awk "FNR>=100 && FNR<=200" "Harry Potter and the Goblet of Fire.txt"
+grep -0 -E "\W+" "Harry Potter and the Goblet of Fire.txt" | sort -u -f | wc -l
+
+
+
+
+Processes,Ports,Cli_drill_2
+
+ps -e | grep chrome
+kill <PID>
+ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | head -4
+ps -eo pid,ppid,cmd,%cpu --sort=-%mem | head -4
+sudo python3 -m http.server 8000
+gnome-terminal & exit
+sudo python3 -m http.server 90
+netstat -a
+lsof -i :5432
+
+
+
+
+Misc Cli_drills_2
+
+ifconfig
+nslookup www.google.com
+ping -c 3 google.com
+whereis node
+whereis code
+
+
+
+Managing Software CLi_drills_2
+
+sudo apt install htop
+sudo apt install vmx
+sudo apt install nginx
+
+sudo apt remove nginx

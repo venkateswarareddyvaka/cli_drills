@@ -1,0 +1,36 @@
+nani@nani-Inspiron-5482:~$ mkdir hello
+nani@nani-Inspiron-5482:~$ cd hello
+nani@nani-Inspiron-5482:~/hello$ mkdir five one
+nani@nani-Inspiron-5482:~/hello$ cd five
+nani@nani-Inspiron-5482:~/hello/five$ mkdir six
+nani@nani-Inspiron-5482:~/hello/five$ cd six
+nani@nani-Inspiron-5482:~/hello/five/six$ touch c.txt
+nani@nani-Inspiron-5482:~/hello/five/six$ mkdir seven
+nani@nani-Inspiron-5482:~/hello/five/six$ cd seven
+nani@nani-Inspiron-5482:~/hello/five/six/seven$ touch error.log
+nani@nani-Inspiron-5482:~/hello/five/six/seven$ cd
+nani@nani-Inspiron-5482:~$ cd hello/one
+nani@nani-Inspiron-5482:~/hello/one$ touch a.txt b.txt
+nani@nani-Inspiron-5482:~/hello/one$ mkdir two
+nani@nani-Inspiron-5482:~/hello/one$ cd two
+nani@nani-Inspiron-5482:~/hello/one/two$ touch d.txt
+nani@nani-Inspiron-5482:~/hello/one/two$ mkdir two
+nani@nani-Inspiron-5482:~/hello/one/two$ cd two
+nani@nani-Inspiron-5482:~/hello/one/two/two$ cd ..
+nani@nani-Inspiron-5482:~/hello/one/two$ mkdir three
+nani@nani-Inspiron-5482:~/hello/one/two$ cd three
+nani@nani-Inspiron-5482:~/hello/one/two/three$ touch e.txt
+nani@nani-Inspiron-5482:~/hello/one/two/three$ mkdir four
+nani@nani-Inspiron-5482:~/hello/one/two/three$ cd four
+nani@nani-Inspiron-5482:~/hello/one/two/three/four$ touch access.log
+nani@nani-Inspiron-5482:~/hello/five/six/seven$ rm error.log
+nani@nani-Inspiron-5482:~/hello/one/two/three/four$ rm access.log
+nani@nani-Inspiron-5482:~/hello/one$ vi a.txt
+nani@nani-Inspiron-5482:~/hello/one$ cat a.txt
+Unix is a family of multitasking, multiuser computer operating 
+systems that derive from the original AT&T Unix, development 
+starting in the 1970s at the Bell Labs research center by Ken 
+Thompson, Dennis Ritchie, and others.
+nani@nani-Inspiron-5482:~/hello$ rm -r five
+nani@nani-Inspiron-5482:~/hello$ mv one uno
+nani@nani-Inspiron-5482:~/hello/uno$ mv a.txt two
